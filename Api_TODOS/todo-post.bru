@@ -1,0 +1,21 @@
+meta {
+  name: todo/post
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://todo-api.test/api/todos
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 2|Hnr6HhbLf5NWauDxoQEPROgEAyzfFwn3VR6kFi7Sb1c3b7eb
+}
+
+body:json {
+  {
+    "title": "tarea de prueba"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: register
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://todo-api.test/api/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Santos",
+    "email": "santos@local.test",
+    "password": "facil.12345"
+  }
+}
