@@ -1,0 +1,23 @@
+meta {
+  name: register 4
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://apiexamenfinal-production.up.railway.app/api/register
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: 19|7555DV8KalFrMHwegeOnU87fOYELzQOl6MKwd7fyc679d5d2
+}
+
+body:json {
+  {
+    "name": "Carlos",
+    "email": "carlos@uml.com",
+    "password": "Carlos.1"
+  }
+}
